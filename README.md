@@ -21,10 +21,10 @@ import sparray
 # What if the voxels aren't perfect unit-cubes?
 # In this example, the data are 0.5 x 0.5 x 5 meters per voxel:
 >>> aniso_block = sparray.sparray(
-    data,
-    voxelsize=(0.5, 0.5, 5),
-    unit="m"
-)
+        data,
+        voxelsize=(0.5, 0.5, 5),
+        unit="m"
+    )
 
 >>> print(aniso_block[2.5, 2.5, 25, 'm'])
 3.14
