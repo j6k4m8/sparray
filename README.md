@@ -25,7 +25,6 @@ import spndarray
     voxelsize=(0.5, 0.5, 5),
     unit="m"
 )
-
 >>> print(aniso_block[2.5, 2.5, 25, 'm'])
 3.14
 ```
