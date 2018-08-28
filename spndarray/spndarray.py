@@ -25,7 +25,7 @@ class Unit:
         return lookup[s]
 
 
-class sparray:
+class spndarray:
 
     def __init__(self, array, voxelsize=(1., 1., 1.), unit=Unit.m):
         self.backend = array

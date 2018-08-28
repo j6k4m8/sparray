@@ -1,10 +1,10 @@
-# sparray
+# spndarray
 
 
 ```python
 
 import numpy as np
-import sparray
+import spndarray
 
 # We have a dataset...
 >>> data = np.zeros((10, 10, 10))
@@ -12,7 +12,7 @@ import sparray
 >>> data[5, 5, 5] = 3.14
 
 # WE know that each voxel of this block is one meter:
->>> block = sparray.sparray(data, unit="m")
+>>> block = spndarray.spndarray(data, unit="m")
 
 # Now we can access that same data in whatever unit we'd like:
 >>> print(block[5000, 5000, 5000, "mm"])
@@ -20,7 +20,7 @@ import sparray
 
 # What if the voxels aren't perfect unit-cubes?
 # In this example, the data are 0.5 x 0.5 x 5 meters per voxel:
->>> aniso_block = sparray.sparray(
+>>> aniso_block = spndarray.spndarray(
     data,
     voxelsize=(0.5, 0.5, 5),
     unit="m"

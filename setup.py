@@ -1,12 +1,10 @@
 from setuptools import setup, find_packages
 from codecs import open
 from os import path
-from sparray import __version__
 
-# to update
-# python setup.py sdist
-# python setup.py bdist_wheel
-# twine upload dist/*
+
+VERSION = "0.0.1"
+
 
 here = path.abspath(path.dirname(__file__))
 
@@ -24,11 +22,12 @@ dependency_links = [
 ]
 
 setup(
-    name='sparray',
-    version=__version__,
+    name='spndarray',
+    version=VERSION,
     description='Library for manipulating spatial arrays.',
     long_description=long_description,
-    # download_url='https://github.com/j6k4m8/sparray/tarball/' + __version__,
+    long_description_content_type="text/markdown",
+    download_url='https://github.com/j6k4m8/spndarray/tarball/' + VERSION,
     license='Apache 2.0',
     classifiers=[
       'Development Status :: 4 - Beta',
