@@ -11,6 +11,12 @@ class Unit:
     mm = 10e-3
     um = 10e-6
     nm = 10e-9
+    km = 10e2
+    #
+    yd = 0.9144
+    in = 0.0254
+    mi = 1609.344
+
 
     @staticmethod
     def from_string(s):
@@ -20,7 +26,12 @@ class Unit:
             "mm": 10e-3,
             "um": 10e-6,
             "μm": 10e-6,
-            "nm": 10e-9
+            "nm": 10e-9,
+            "km": 10e2
+            #
+            "yd": 0.9144,
+            "in": 0.0254,
+            "mi": 1609.344,
         }
         return lookup[s]
 
